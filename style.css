@@ -1,0 +1,335 @@
+:root {
+  --cor-principal: #7f6acc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+:root {
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  background: url(imagens/pattern-bg2.svg),
+    /*linear-gradient(180deg, rgba(216,123,255,1) 0%, rgba(228,162,255,1) 100%);*/
+    linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(208, 93, 255, 1) 100%);
+}
+
+header,
+footer {
+  /*background-color: var(--cor-principal);*/
+  background: rgb(115, 45, 144);
+  background: linear-gradient(180deg, rgba(115, 45, 144, 1) 0%, rgba(170, 67, 213, 1) 100%);
+  color: white;
+}
+
+/*Cabeçalho*/
+.btn:link,
+.btn:visited {
+  padding: 0 25px;
+  /*border: 1px solid;*/
+  border-radius: 1000px;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+  /*background-color: var(--cor-principal);*/
+  padding: 10px 25px;
+  color: white;
+
+}
+
+.btn:hover {
+  /*transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.233);*/
+  border: 1px solid rgba(255, 255, 255, 0.404);
+  font-size: 1.08em;
+
+}
+
+.btn:active {
+  transform: translateY(-3px);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+}
+
+.btn:hover::after {
+  background-color: var(--cor-principal);
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
+
+.menu {
+  padding: 10px 20px;
+  border-radius: 16px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 20px;
+
+}
+
+/*Página principal*/
+
+.Topicos {
+  border: 2px black solid;
+  width: 25vw;
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  padding: 1px;
+  border-radius: 10px;
+  margin: 2vw;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.img {
+  width: 25vw;
+  height: 15vw;
+  border-radius: 10px;
+}
+
+.main-topics {
+  display: flex;
+  margin: auto;
+  padding: 1vw;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.p-topics {
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  font-size: 3vw;
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.Topicos:hover {
+  background-color: var(--cor-principal);
+  transition: 0.5s ease-in-out;
+  scale: 1.1;
+}
+
+.Topicos::after {
+  background-color: white;
+  transition: 0.5s ease-in-out;
+}
+
+/*Paǵinas de Texto*/
+main {
+  background-color: white;
+  text-align: center;
+  margin: 2cm 6cm auto;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.texto {
+  text-align: justify;
+  padding: 6px;
+  text-indent: 6%;
+}
+
+.image {
+  text-align: center;
+  margin: auto;
+}
+
+.referencia {
+  background-color: white;
+  text-indent: 0;
+  font-size: 15px;
+  text-align: left;
+  color: black;
+  margin: none;
+}
+
+h1,
+h2 {
+  text-align: left;
+  text-indent: 10px;
+}
+
+.referencia a {
+  display: flex;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*Rodapé*/
+footer {
+  bottom: 0;
+  margin-top: 3.47%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer p {
+  display: inline;
+}
+
+/*Página Átomo*/
+#linha {
+  width: 50%;
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#linha2 {
+  width: 25%;
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#sub-linha1 {
+  text-align: left;
+  text-indent: 24.9%;
+  font-size: small;
+}
+
+#sub-linha2 {
+  text-align: left;
+  text-indent: 37.3%;
+  font-size: small;
+}
+
+/*Página Tabela*/
+#linha3 {
+  width: 40%;
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#sub-linha3 {
+  text-align: left;
+  text-indent: 29.8%;
+  font-size: small;
+}
+
+/*Página Ligação*/
+#linha4 {
+  width: 40%;
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#sub-linha4 {
+  text-align: left;
+  text-indent: 29.8%;
+  font-size: small;
+}
+
+/*Página Mistura*/
+#linha5 {
+  width: 40%;
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#sub-linha5 {
+  text-align: left;
+  text-indent: 29.8%;
+  font-size: small;
+}
+
+#linha6 {
+  width: 40%;
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#sub-linha6 {
+  text-align: left;
+  text-indent: 29.8%;
+  font-size: small;
+}
+
+#linha7 {
+  width: 40%;
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#sub-linha7 {
+  text-align: left;
+  text-indent: 29.8%;
+  font-size: small;
+}
+
+/*Página Reações*/
+#linha8 {
+  width: 40%;
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#sub-linha8 {
+  text-align: left;
+  text-indent: 29.8%;
+  font-size: small;
+}
+
+/*Página Radioatividade*/
+#linha9 {
+  width: 40%;
+  display: block;
+  border: 2px solid black;
+  margin: auto;
+}
+
+#sub-linha9 {
+  text-align: left;
+  text-indent: 29.8%;
+  font-size: small;
+}
+
+
+
+/*Media: Tablet*/
+@media (max-width: 800px) {
+  .menu {
+    font-size: 16px;
+  }
+}
+
+
+/*Media: Celular*/
+@media (max-width: 500px) {
+  .Topicos {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    font-size: 14px;
+  }
+}
