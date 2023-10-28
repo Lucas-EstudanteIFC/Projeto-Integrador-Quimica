@@ -1,5 +1,6 @@
 :root {
   --cor-principal: #7f6acc;
+  --font-principal: "Kanit", sans-serif;
 }
 
 * {
@@ -9,42 +10,46 @@
   text-decoration: none;
 }
 
-:root {
-  font-family: "Kanit", sans-serif;
-}
-
 body {
-  background: url(imagens/pattern-bg2.svg),
-    /*linear-gradient(180deg, rgba(216,123,255,1) 0%, rgba(228,162,255,1) 100%);*/
-    linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(208, 93, 255, 1) 100%);
+  background: url(imagens/pattern-bg2.svg), rgba(170, 67, 213, 1);
 }
 
-header,
-footer {
-  /*background-color: var(--cor-principal);*/
+/*Cabeçalho*/
+header {
   background: rgb(115, 45, 144);
   background: linear-gradient(180deg, rgba(115, 45, 144, 1) 0%, rgba(170, 67, 213, 1) 100%);
   color: white;
 }
 
-/*Cabeçalho*/
+#logo {
+  display: none;
+  width: 3vw;
+}
+
+.menu {
+  border-radius: 16px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 3vh;
+  font-family: var(--font-principal);
+}
+
 .btn:link,
 .btn:visited {
-  padding: 0 25px;
-  /*border: 1px solid;*/
   border-radius: 1000px;
   display: flex;
   transition: all 0.2s ease-in-out;
   margin: 10px;
-  /*background-color: var(--cor-principal);*/
-  padding: 10px 25px;
+  padding: 10px 15px;
   color: white;
 
 }
 
 .btn:hover {
-  /*transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.233);*/
   border: 1px solid rgba(255, 255, 255, 0.404);
   font-size: 1.08em;
 
@@ -65,27 +70,13 @@ footer {
   opacity: 0;
 }
 
-.menu {
-  padding: 10px 20px;
-  border-radius: 16px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 20px;
-
-}
 
 /*Página principal*/
 
 .Topicos {
   border: 2px black solid;
   width: 25vw;
-  height: 15vw;
-  display: flex;
-  flex-direction: row;
+  height: 32vh;
   padding: 1px;
   border-radius: 10px;
   margin: 2vw;
@@ -93,22 +84,20 @@ footer {
   position: relative;
   background-color: white;
   overflow: hidden;
+  font-family: var(--font-principal);
+}
+
+.main-topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: auto;
+  padding: 1vw;
 }
 
 .img {
   width: 25vw;
-  height: 15vw;
-  border-radius: 10px;
-}
-
-.main-topics {
-  display: flex;
-  margin: auto;
-  padding: 1vw;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
-
+  height: 32vh;
 }
 
 .p-topics {
@@ -119,6 +108,7 @@ footer {
   position: absolute;
   bottom: 0;
   background: rgba(255, 255, 255, 0.6);
+  color: rgba(115, 45, 144, 1);
 }
 
 .Topicos:hover {
@@ -137,7 +127,6 @@ main {
   background-color: white;
   text-align: center;
   margin: 2cm 6cm auto;
-  font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
   border: 1px solid black;
 }
@@ -183,6 +172,8 @@ footer {
   margin-top: 3.47%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background: linear-gradient(180deg, rgba(170, 67, 213, 1) 0%, rgba(115, 45, 144, 1) 100%);
+  color: white;
 }
 
 footer p {
@@ -191,15 +182,7 @@ footer p {
 
 /*Página Átomo*/
 #linha {
-  width: 50%;
-  display: block;
-  border: 2px solid black;
-  margin: auto;
-}
-
-#linha2 {
-  width: 25%;
-  display: block;
+  width: 35vw;
   border: 2px solid black;
   margin: auto;
 }
@@ -210,6 +193,12 @@ footer p {
   font-size: small;
 }
 
+#linha2 {
+  width: 23vw;
+  border: 2px solid black;
+  margin: auto;
+}
+
 #sub-linha2 {
   text-align: left;
   text-indent: 37.3%;
@@ -218,8 +207,7 @@ footer p {
 
 /*Página Tabela*/
 #linha3 {
-  width: 40%;
-  display: block;
+  width: 35vw;
   border: 2px solid black;
   margin: auto;
 }
@@ -232,8 +220,7 @@ footer p {
 
 /*Página Ligação*/
 #linha4 {
-  width: 40%;
-  display: block;
+  width: 27vw;
   border: 2px solid black;
   margin: auto;
 }
@@ -246,8 +233,7 @@ footer p {
 
 /*Página Mistura*/
 #linha5 {
-  width: 40%;
-  display: block;
+  width: 35vw;
   border: 2px solid black;
   margin: auto;
 }
@@ -259,8 +245,7 @@ footer p {
 }
 
 #linha6 {
-  width: 40%;
-  display: block;
+  width: 25vw;
   border: 2px solid black;
   margin: auto;
 }
@@ -271,23 +256,9 @@ footer p {
   font-size: small;
 }
 
-#linha7 {
-  width: 40%;
-  display: block;
-  border: 2px solid black;
-  margin: auto;
-}
-
-#sub-linha7 {
-  text-align: left;
-  text-indent: 29.8%;
-  font-size: small;
-}
-
 /*Página Reações*/
 #linha8 {
-  width: 40%;
-  display: block;
+  width: 35vw;
   border: 2px solid black;
   margin: auto;
 }
@@ -300,8 +271,7 @@ footer p {
 
 /*Página Radioatividade*/
 #linha9 {
-  width: 40%;
-  display: block;
+  width: 35vw;
   border: 2px solid black;
   margin: auto;
 }
@@ -312,24 +282,82 @@ footer p {
   font-size: small;
 }
 
-
-
 /*Media: Tablet*/
-@media (max-width: 800px) {
-  .menu {
-    font-size: 16px;
+@media (max-width: 850px) {
+
+  /*Menu*/
+  .btn:link,
+  .btn:visited {
+    padding: 10px;
+  }
+
+
+  /*Página Principal*/
+  .main-topics {
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+
+  .Topicos {
+    width: 45vw;
+    height: 40vh;
+  }
+
+  .img {
+    width: 45vw;
+    height: 40vh;
+  }
+
+  .p-topics {
+    font-size: 4vw;
+  }
+
+  /*Páginas de Texto*/
+  main {
+    margin: 3vw 4vh auto;
+
   }
 }
 
 
 /*Media: Celular*/
-@media (max-width: 500px) {
-  .Topicos {
-    flex-direction: column;
-    flex-wrap: wrap;
+@media (max-width: 550px) {
+
+  /*Menu*/
+  #logo {
+    display: block;
+    width: 25vh;
+    margin: auto;
   }
 
-  .menu {
-    font-size: 14px;
+  .btn:link,
+  .btn:visited {
+    display: none;
+  }
+
+  /*Página Pricipal*/
+  .main-topics {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  .Topicos {
+    width: 93vw;
+    height: 50vh;
+  }
+
+  .img {
+    width: 93vw;
+    height: 50vh;
+  }
+
+  .p-topics {
+    display: none;
+  }
+
+  /*Páginas de Texto*/
+  main {
+    margin: auto 2vw;
+
   }
 }
