@@ -180,6 +180,11 @@ footer p {
   display: inline;
 }
 
+#criadores {
+  padding: 0;
+  width: 5vw;
+}
+
 /*Página Átomo*/
 #linha {
   width: 35vw;
@@ -289,8 +294,8 @@ footer p {
   .btn:link,
   .btn:visited {
     padding: 10px;
+    font-size: 14px;
   }
-
 
   /*Página Principal*/
   .main-topics {
@@ -315,7 +320,7 @@ footer p {
   /*Páginas de Texto*/
   main {
     margin: 3vw 4vh auto;
-
+    font-size: 18px;
   }
 }
 
@@ -357,7 +362,11 @@ footer p {
 
   /*Páginas de Texto*/
   main {
-    margin: auto 2vw;
+    margin: 2vw 2vw;
+    font-size: medium;   
+  }
 
+  .figura {
+    display: none;
   }
 }
