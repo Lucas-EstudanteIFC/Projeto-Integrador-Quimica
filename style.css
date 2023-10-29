@@ -172,6 +172,7 @@ footer {
   margin-top: 3.47%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   background: linear-gradient(180deg, rgba(170, 67, 213, 1) 0%, rgba(115, 45, 144, 1) 100%);
   color: white;
 }
@@ -181,7 +182,7 @@ footer p {
 }
 
 #criadores {
-  padding: 0;
+  padding: 10px;
   width: 5vw;
 }
 
