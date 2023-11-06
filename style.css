@@ -295,7 +295,7 @@ footer p {
   .btn:link,
   .btn:visited {
     padding: 10px;
-    font-size: 14px;
+    font-size: 2vh;
   }
 
   /*Página Principal*/
@@ -330,17 +330,15 @@ footer p {
 @media (max-width: 550px) {
 
   /*Menu*/
-  #logo {
-    display: block;
-    width: 25vh;
-    margin: auto;
-  }
-
   .btn:link,
   .btn:visited {
     display: none;
   }
 
+  #botao-principal {
+    display: inline-block;
+    font-size: larger;
+  }
   /*Página Pricipal*/
   .main-topics {
     grid-template-columns: 1fr;
@@ -349,16 +347,20 @@ footer p {
 
   .Topicos {
     width: 93vw;
-    height: 50vh;
+    height: 50vw;
+    text-align: center;
+    overflow: hidden;
   }
 
   .img {
     width: 93vw;
-    height: 50vh;
+    height: 50vw;
   }
 
   .p-topics {
-    display: none;
+    font-size: 10vw;
+    align-self: auto;
+    
   }
 
   /*Páginas de Texto*/
