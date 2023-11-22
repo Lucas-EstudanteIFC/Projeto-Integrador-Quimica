@@ -347,7 +347,7 @@ footer {
   }
 
   #botao-principal {
-    display: inline-block;
+    display: block;
     font-size: larger;
   }
   /*Página Pricipal*/
